@@ -1,0 +1,94 @@
+{
+  "_source": "2ГИС 03.10.2026: https://2gis.uz/tashkent/firm/70000001100880985 (адрес, часы, телефон, услуги; цен в 2ГИС нет); косметологи — из отзывов 2ГИС. Длительность условная.",
+  "salon": {
+    "name": "Opatra London",
+    "address_ru": "Ташкент, пр. Мирзо Улугбека, 3/2",
+    "address_en": "3/2 Mirzo Ulugbek Ave, Tashkent",
+    "phone": "+998 77 319 77 34",
+    "lat": 41.306647,
+    "lon": 69.309609,
+    "opens": "09:00",
+    "closes": "20:00",
+    "currency_ru": "сум",
+    "currency_en": "UZS",
+    "hide_order": true,
+    "emoji": "✨"
+  },
+  "categories": [
+    {
+      "id": "cosm",
+      "ru": "Косметология",
+      "en": "Cosmetology",
+      "emoji": "✨"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "category": "cosm",
+      "ru": "Чистка лица",
+      "en": "Facial cleansing",
+      "price": 0,
+      "minutes": 60
+    },
+    {
+      "id": 2,
+      "category": "cosm",
+      "ru": "Пилинг",
+      "en": "Peeling",
+      "price": 0,
+      "minutes": 45
+    },
+    {
+      "id": 3,
+      "category": "cosm",
+      "ru": "Массаж лица",
+      "en": "Facial massage",
+      "price": 0,
+      "minutes": 45
+    },
+    {
+      "id": 4,
+      "category": "cosm",
+      "ru": "Аппаратная косметология",
+      "en": "Device cosmetology",
+      "price": 0,
+      "minutes": 60
+    }
+  ],
+  "masters": [
+    {
+      "id": 1,
+      "ru": "Тахмина",
+      "en": "Takhmina",
+      "about_ru": "Косметолог",
+      "about_en": "Cosmetologist",
+      "categories": [
+        "cosm"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 2,
+      "ru": "Ильяна",
+      "en": "Ilyana",
+      "about_ru": "Косметолог",
+      "about_en": "Cosmetologist",
+      "categories": [
+        "cosm"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 3,
+      "ru": "Назокат",
+      "en": "Nazokat",
+      "about_ru": "Косметолог",
+      "about_en": "Cosmetologist",
+      "categories": [
+        "cosm"
+      ],
+      "weekly_off": []
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "_source": "2ГИС 03.10.2026: https://2gis.uz/tashkent/firm/70000001098300635 (адрес, часы, телефон, услуги, цена стрижки); мастера — из отзывов 2ГИС. Длительность условная.",
+  "salon": {
+    "name": "Ulfatlar Barbershop",
+    "address_ru": "Ташкент, ул. Шота Руставели, 81",
+    "address_en": "81 Shota Rustaveli St, Tashkent",
+    "phone": "+998 97 821 19 91",
+    "lat": 41.270115,
+    "lon": 69.237222,
+    "opens": "10:00",
+    "closes": "23:00",
+    "currency_ru": "сум",
+    "currency_en": "UZS",
+    "price_from": true,
+    "emoji": "💈",
+    "hide_order": true
+  },
+  "categories": [
+    {
+      "id": "barber",
+      "ru": "Барбершоп",
+      "en": "Barbershop",
+      "emoji": "💈"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "category": "barber",
+      "ru": "Мужская стрижка",
+      "en": "Men's haircut",
+      "price": 250000,
+      "minutes": 60
+    },
+    {
+      "id": 2,
+      "category": "barber",
+      "ru": "Детская стрижка",
+      "en": "Kids' haircut",
+      "price": 0,
+      "minutes": 30
+    },
+    {
+      "id": 3,
+      "category": "barber",
+      "ru": "Мужская химзавивка",
+      "en": "Men's perm",
+      "price": 0,
+      "minutes": 90
+    },
+    {
+      "id": 4,
+      "category": "barber",
+      "ru": "Мужской педикюр",
+      "en": "Men's pedicure",
+      "price": 0,
+      "minutes": 60
+    }
+  ],
+  "masters": [
+    {
+      "id": 1,
+      "ru": "Ильхам",
+      "en": "Ilham",
+      "about_ru": "Барбер",
+      "about_en": "Barber",
+      "categories": [
+        "barber"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 2,
+      "ru": "Руслан",
+      "en": "Ruslan",
+      "about_ru": "Барбер",
+      "about_en": "Barber",
+      "categories": [
+        "barber"
+      ],
+      "weekly_off": []
+    }
+  ]
+}

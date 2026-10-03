@@ -1,0 +1,48 @@
+{
+  "_source": "2ГИС 03.10.2026: https://2gis.uz/tashkent/firm/70000001088131849 (адрес, часы, телефон; цен в 2ГИС нет); мастер — из отзыва 2ГИС 2025. Длительность условная.",
+  "salon": {
+    "name": "Black Shark Barbershop",
+    "address_ru": "Ташкент, ул. Урикзор, 157",
+    "address_en": "157 Urikzor St, Tashkent",
+    "phone": "+998 33 377 96 66",
+    "lat": 41.293307,
+    "lon": 69.249106,
+    "opens": "11:00",
+    "closes": "21:00",
+    "currency_ru": "сум",
+    "currency_en": "UZS",
+    "emoji": "🦈",
+    "hide_order": true
+  },
+  "categories": [
+    {
+      "id": "barber",
+      "ru": "Стрижки",
+      "en": "Haircuts",
+      "emoji": "💈"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "category": "barber",
+      "ru": "Мужская стрижка",
+      "en": "Men's haircut",
+      "price": 0,
+      "minutes": 60
+    }
+  ],
+  "masters": [
+    {
+      "id": 1,
+      "ru": "Мухамад Али",
+      "en": "Muhamad Ali",
+      "about_ru": "Барбер",
+      "about_en": "Barber",
+      "categories": [
+        "barber"
+      ],
+      "weekly_off": []
+    }
+  ]
+}

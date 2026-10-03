@@ -1,0 +1,92 @@
+{
+  "_source": "2ГИС 03.10.2026: https://2gis.uz/tashkent/firm/70000001081124524 (адрес, часы, телефон, услуга; цен в 2ГИС нет); мастера — из отзывов 2ГИС. Длительность условная.",
+  "salon": {
+    "name": "Laser House",
+    "address_ru": "Ташкент, Нукусская ул., 74",
+    "address_en": "74 Nukus St, Tashkent",
+    "phone": "+998 94 000 00 48",
+    "lat": 41.286178,
+    "lon": 69.269192,
+    "opens": "10:00",
+    "closes": "21:00",
+    "currency_ru": "сум",
+    "currency_en": "UZS",
+    "hide_order": true,
+    "emoji": "✨"
+  },
+  "categories": [
+    {
+      "id": "laser",
+      "ru": "Лазерная эпиляция",
+      "en": "Laser hair removal",
+      "emoji": "✨"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "category": "laser",
+      "ru": "Лазерная эпиляция",
+      "en": "Laser hair removal",
+      "price": 0,
+      "minutes": 60
+    }
+  ],
+  "masters": [
+    {
+      "id": 1,
+      "ru": "Нигина",
+      "en": "Nigina",
+      "about_ru": "Мастер лазерной эпиляции",
+      "about_en": "Laser specialist",
+      "categories": [
+        "laser"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 2,
+      "ru": "Ширин",
+      "en": "Shirin",
+      "about_ru": "Мастер лазерной эпиляции",
+      "about_en": "Laser specialist",
+      "categories": [
+        "laser"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 3,
+      "ru": "Наргиз",
+      "en": "Nargiz",
+      "about_ru": "Мастер лазерной эпиляции",
+      "about_en": "Laser specialist",
+      "categories": [
+        "laser"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 4,
+      "ru": "Моника",
+      "en": "Monika",
+      "about_ru": "Мастер лазерной эпиляции",
+      "about_en": "Laser specialist",
+      "categories": [
+        "laser"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 5,
+      "ru": "Шахноза",
+      "en": "Shakhnoza",
+      "about_ru": "Мастер лазерной эпиляции",
+      "about_en": "Laser specialist",
+      "categories": [
+        "laser"
+      ],
+      "weekly_off": []
+    }
+  ]
+}

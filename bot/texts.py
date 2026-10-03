@@ -217,19 +217,137 @@ TEXTS = {
         "sent_to_dev": "✉️ Your message has been passed to the developer.",
         "unknown": "Please use the menu buttons 👇",
     },
+    "uz": {
+        "choose_lang": "Iltimos, tilni tanlang / Пожалуйста, выберите язык:",
+        "welcome": ("🌸 <b>{salon}</b> ga xush kelibsiz!\n\n"
+                    "Bu yerda bir daqiqada — qo'ng'iroqlarsiz va kutmasdan — yozilishingiz mumkin.\n"
+                    "Men tashrif haqida oldindan eslataman, yozuvni esa bir necha bosishda ko'chirish yoki bekor qilish mumkin."),
+        "ask_contact": ("Mutaxassis kimni kutayotganini bilishi uchun, iltimos, quyidagi tugma orqali telefon "
+                        "raqamingizni yuboring. Raqam faqat yozuv bo'yicha aloqa uchun kerak."),
+        "btn_share_contact": "📱 Raqamni yuborish",
+        "contact_saved": "Rahmat, {name}! Tayyor — kerakli bo'limni tanlang 👇",
+        "not_own_contact": "Iltimos, o'z raqamingizni quyidagi tugma orqali yuboring 🙏",
+        "demo_banner": ("ℹ️ Bu demo-bot. Yozuvlar sinov uchun. "
+                        "Admin-panelni ham ochib, egasi uchun hammasi qanday ko'rinishini ko'rishingiz mumkin."),
+        "menu_book": "📅 Yozilish",
+        "menu_my": "🗓 Mening yozuvlarim",
+        "menu_prices": "💇 Xizmatlar va narxlar",
+        "menu_masters": "👩‍🎨 Mutaxassislar",
+        "menu_contacts": "📍 Kontaktlar",
+        "menu_reviews": "⭐ Sharhlar",
+        "menu_admin": "👑 Admin-panel",
+        "menu_order": "💼 Shunday bot kerak",
+        "menu_lang": "🌐 Til",
+        "menu_hint": "Asosiy menyu 👇",
+        "pick_category": "1-qadam (4 tadan). Yo'nalishni tanlang:",
+        "pick_service": "1-qadam (4 tadan). Xizmatni tanlang:",
+        "pick_master": "2-qadam (4 tadan). Mutaxassisni tanlang:",
+        "any_master": "✨ Istalgan bo'sh mutaxassis",
+        "pick_date": "3-qadam (4 tadan). Sanani tanlang:",
+        "pick_time": "4-qadam (4 tadan). {date} uchun bo'sh vaqt:",
+        "no_slots": "Bu sanada bo'sh vaqt yo'q 😔 Iltimos, boshqa kunni tanlang.",
+        "confirm": ("Iltimos, yozuvni tekshiring:\n\n"
+                    "💇 {service}\n👩‍🎨 Mutaxassis: {master}\n📅 {date}, {time}\n⏱ {minutes} daq\n💰 {price}\n\n"
+                    "Hammasi to'g'rimi?"),
+        "btn_confirm": "✅ Tasdiqlash",
+        "btn_back": "« Orqaga",
+        "btn_cancel_flow": "✖️ Bekor qilish",
+        "booked": ("🎉 Siz yozildingiz!\n\n💇 {service}\n👩‍🎨 {master}\n📅 {date}, {time}\n📍 {address}\n\n"
+                   "Tashrifdan bir kun va 2 soat oldin eslataman. Sizni kutamiz!"),
+        "slot_taken": "Afsuski, bu vaqt hozirgina band qilindi 😔 Iltimos, boshqasini tanlang.",
+        "flow_cancelled": "Yaxshi, yozuv yaratilmadi. Menyuga qaytaman.",
+        "my_empty": "Hozircha yaqin yozuvlaringiz yo'q. Vaqt tanlash uchun «📅 Yozilish» tugmasini bosing.",
+        "my_item": "📅 {date}, {time}\n💇 {service}\n👩‍🎨 {master}",
+        "btn_reschedule": "🔁 Ko'chirish",
+        "btn_cancel_booking": "❌ Bekor qilish",
+        "ask_cancel": "{date}, {time} dagi yozuvni bekor qilasizmi?",
+        "btn_yes_cancel": "Ha, bekor qilish",
+        "btn_no": "Yo'q, qoldirish",
+        "cancelled": "Yozuv bekor qilindi. Sizni boshqa safar kutamiz 🌸",
+        "reschedule_start": "«{service}» uchun yangi sanani tanlang:",
+        "rescheduled": "✅ Yozuv {date}, {time} ga ko'chirildi. Oldindan xabar berganingiz uchun rahmat!",
+        "prices_title": "💇 <b>Xizmatlar va narxlar</b>\n",
+        "masters_title": "👩‍🎨 <b>Mutaxassislarimiz</b>\n",
+        "contacts": ("📍 <b>{salon}</b>\n{address}\n📞 {phone}\n🕙 Har kuni {opens}–{closes}\n\n"
+                     "Xaritadagi joylashuv quyida 👇"),
+        "reviews_title": "⭐ <b>Sharhlar</b> — o'rtacha baho 5 dan {avg} ({n})\n",
+        "reviews_empty": "Hozircha sharhlar yo'q — sizniki birinchi bo'lishi mumkin 🙂",
+        "remind_24h": "🔔 Eslatma: ertaga soat {time} da sizni {master} kutadi — «{service}».\nHammasi kuchdami?",
+        "remind_2h": "⏰ 2 soatdan keyin, soat {time} da — «{service}», mutaxassis {master}. Ko'rishguncha!",
+        "btn_im_coming": "👍 Kelaman",
+        "coming_ok": "Ajoyib, sizni kutamiz! 🌸",
+        "ask_review": "{master} bilan «{service}» tashrifi qanday o'tdi? Iltimos, baholang:",
+        "review_thanks": "Baho uchun rahmat! Xohlasangiz, tashrif haqida bir xabarda bir-ikki so'z yozing — yoki botdan foydalanishda davom eting.",
+        "review_text_thanks": "Sharh uchun rahmat, bu mutaxassislarga juda yordam beradi 💜",
+        "admin_new": "🆕 <b>Yangi yozuv</b>\n{client}\n💇 {service}\n👩‍🎨 {master}\n📅 {date}, {time}",
+        "admin_cancel": "❌ <b>Mijoz yozuvni bekor qildi</b>\n{client}\n💇 {service}\n📅 {date}, {time}",
+        "admin_moved": "🔁 <b>Yozuv ko'chirildi</b>\n{client}\n💇 {service}\n📅 {date}, {time}",
+        "admin_low_rating": "⚠️ Past baho {rating}/5: {client} ({service}, {master}). Mijoz bilan bog'lanish kerak.",
+        "admin_demo_note": "\n\n<i>Administrator bu xabarni shunday ko'radi.</i>",
+        "admin_title": "👑 <b>Admin-panel</b>\nBo'limni tanlang:",
+        "admin_demo_hint": "\n<i>Demo-rejim: boshqa mijozlar ma'lumotlari yashirilgan, faqat o'z yozuvlaringizni boshqarishingiz mumkin.</i>",
+        "adm_today": "📋 Bugun",
+        "adm_tomorrow": "📋 Ertaga",
+        "adm_pick_day": "📆 Sanani tanlash",
+        "adm_days_off": "🚫 Mutaxassislar dam olish kunlari",
+        "adm_broadcast": "📣 Xabar tarqatish",
+        "adm_stats": "📊 Statistika",
+        "adm_day_empty": "{date} uchun yozuvlar yo'q.",
+        "adm_day_title": "📋 <b>{date} dagi yozuvlar</b> ({n})\n",
+        "adm_booking_line": "{time}–{end} · {master} · {service}\n   {client} · {status}",
+        "st_active": "kutilmoqda", "st_done": "keldi ✅", "st_noshow": "kelmadi 🚫", "st_cancelled": "bekor qilindi",
+        "adm_pick_booking": "Holatni o'zgartirish uchun yozuvni bosing:",
+        "adm_done": "✅ Keldi",
+        "adm_noshow": "🚫 Kelmadi",
+        "adm_cancel": "❌ Bekor qilish",
+        "adm_only_own": "Demo-rejimda faqat o'z yozuvlaringizni boshqarishingiz mumkin 🙂",
+        "adm_status_set": "Holat yangilandi.",
+        "adm_cancelled_by_salon": "Afsuski, {date}, {time} dagi yozuvingiz bekor qilindi. Uzr so'raymiz — iltimos, boshqa vaqtni tanlang.",
+        "adm_pick_master": "Mutaxassisni tanlang:",
+        "adm_pick_off_day": "{master} uchun dam olish kunini qo'yish yoki olib tashlash uchun sanani bosing:",
+        "adm_off_only_owner": "Demo-rejimda dam olish kunlarini faqat bot egasi o'zgartiradi. Jadval shunday ko'rinadi:",
+        "adm_off_set": "Tayyor: {date} — {state}.",
+        "off_on": "dam olish kuni", "off_off": "ish kuni",
+        "adm_broadcast_ask": "Tarqatiladigan xabar matnini bitta xabarda yozing (masalan, hafta aksiyasi):",
+        "adm_broadcast_demo": "Demo-rejim: xabar boshqalarni bezovta qilmaslik uchun faqat sizga yuborildi.",
+        "adm_broadcast_done": "Xabar {n} ta qabul qiluvchiga yuborildi.",
+        "adm_stats_text": ("📊 <b>Oxirgi 30 kun</b>\n"
+                           "Yozuvlar: {total} (bekor qilingan: {cancelled})\n"
+                           "Kutilayotgan tushum: {revenue}\n"
+                           "Mashhur xizmat: {top_service}\n"
+                           "Eng band mutaxassis: {top_master}\n"
+                           "Bazadagi mijozlar: {users}\n"
+                           "O'rtacha baho: {avg} ({n_reviews} ta sharh)"),
+        "order_intro": ("💼 Bunday botni sizning biznesingiz uchun ham qilish mumkin.\n\n"
+                        "Iltimos, bitta xabarda yozing: nima bilan shug'ullanasiz va nimani avtomatlashtirmoqchisiz. "
+                        "Dasturchi shu yerda javob beradi."),
+        "order_sent": "Rahmat! So'rov dasturchiga yuborildi, u shu yerda bir kun ichida javob beradi 🙌",
+        "dev_reply": "💬 <b>Dasturchi javobi:</b>\n\n{text}",
+        "sent_to_dev": "✉️ Xabar dasturchiga yuborildi.",
+        "unknown": "Iltimos, menyu tugmalaridan foydalaning 👇",
+    },
 }
 
-WEEKDAYS = {"ru": ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"], "en": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]}
+WEEKDAYS = {"ru": ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"], "en": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+            "uz": ["Du", "Se", "Ch", "Pa", "Ju", "Sh", "Ya"]}
 MONTHS = {
     "ru": ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября",
            "ноября", "декабря"],
     "en": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "uz": ["yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust", "sentabr", "oktabr", "noyabr",
+           "dekabr"],
 }
+LANG_LABELS = {"ru": "🇷🇺 Русский", "en": "🇬🇧 English", "uz": "🇺🇿 O'zbekcha"}
+MINUTES = {"ru": "мин", "en": "min", "uz": "daq"}
 
 
 def t(lang: str | None, key: str, **kw) -> str:
+    from . import catalog
     lang = lang if lang in TEXTS else "ru"
-    return TEXTS[lang][key].format(**kw) if kw else TEXTS[lang][key]
+    s = catalog.SALON.get("texts", {}).get(lang, {}).get(key) or TEXTS[lang][key]
+    s = s.format(**kw) if kw else s
+    emoji = catalog.SALON.get("emoji")
+    return s.replace("🌸", emoji) if emoji else s
 
 
 def all_variants(key: str) -> set[str]:
@@ -240,10 +358,19 @@ def fmt_date(d, lang: str | None) -> str:
     lang = lang if lang in TEXTS else "ru"
     if lang == "ru":
         return f"{WEEKDAYS['ru'][d.weekday()]}, {d.day} {MONTHS['ru'][d.month - 1]}"
+    if lang == "uz":
+        return f"{WEEKDAYS['uz'][d.weekday()]}, {d.day}-{MONTHS['uz'][d.month - 1]}"
     return f"{WEEKDAYS['en'][d.weekday()]}, {MONTHS['en'][d.month - 1]} {d.day}"
 
 
 def fmt_price(amount: int, lang: str | None) -> str:
-    from .catalog import SALON
-    cur = SALON["currency_en"] if lang == "en" else SALON["currency_ru"]
-    return f"{amount:,}".replace(",", " ") + f" {cur}"
+    from . import catalog
+    if amount <= 0:
+        return {"en": "price on request", "uz": "narxini administrator aytadi"}.get(lang, "цену уточнит администратор")
+    num = f"{amount:,}".replace(",", " ")
+    frm = catalog.SALON.get("price_from")
+    if lang == "uz":
+        return f"{num} so'm" + ("dan" if frm else "")
+    cur = catalog.SALON["currency_en"] if lang == "en" else catalog.SALON["currency_ru"]
+    prefix = ("from " if lang == "en" else "от ") if frm else ""
+    return prefix + num + f" {cur}"

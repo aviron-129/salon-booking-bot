@@ -1,0 +1,30 @@
+{
+  "_source": "2ГИС 03.10.2026: https://2gis.uz/tashkent/firm/70000001066230553 (адрес, часы, телефон, цена стрижки); имена мастеров — из отзывов 2ГИС 2024–2025. Длительность услуг — условная, уточнить у владельца.",
+  "salon": {
+    "name": "Avtoritet Barbershop",
+    "address_ru": "Ташкент, ул. Алишера Навои, 14Б, 1 этаж",
+    "address_en": "14B Alisher Navoi St, 1st floor, Tashkent",
+    "phone": "+998 99 075 09 90",
+    "lat": 41.321634,
+    "lon": 69.259736,
+    "opens": "10:00",
+    "closes": "22:00",
+    "currency_ru": "сум",
+    "currency_en": "UZS",
+    "price_from": true,
+    "emoji": "💈",
+    "hide_order": true
+  },
+  "categories": [
+    {"id": "barber", "ru": "Стрижки", "en": "Haircuts", "emoji": "💈"}
+  ],
+  "services": [
+    {"id": 1, "category": "barber", "ru": "Мужская стрижка", "en": "Men's haircut", "price": 160000, "minutes": 60},
+    {"id": 2, "category": "barber", "ru": "Детская стрижка", "en": "Kids' haircut", "price": 0, "minutes": 30}
+  ],
+  "masters": [
+    {"id": 1, "ru": "Шахзод", "en": "Shahzod", "about_ru": "Барбер", "about_en": "Barber", "categories": ["barber"], "weekly_off": []},
+    {"id": 2, "ru": "Саид", "en": "Said", "about_ru": "Барбер", "about_en": "Barber", "categories": ["barber"], "weekly_off": []},
+    {"id": 3, "ru": "Бобур", "en": "Bobur", "about_ru": "Барбер", "about_en": "Barber", "categories": ["barber"], "weekly_off": []}
+  ]
+}

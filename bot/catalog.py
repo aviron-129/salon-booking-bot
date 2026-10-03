@@ -1,5 +1,8 @@
+import json
+import os
 from dataclasses import dataclass
 from datetime import time
+from pathlib import Path
 
 
 @dataclass(frozen=True)
@@ -8,6 +11,7 @@ class Category:
     ru: str
     en: str
     emoji: str
+    uz: str = ""
 
 
 @dataclass(frozen=True)
@@ -18,6 +22,7 @@ class Service:
     en: str
     price: int
     minutes: int
+    uz: str = ""
 
 
 @dataclass(frozen=True)
@@ -29,6 +34,8 @@ class Master:
     about_en: str
     categories: tuple[str, ...]
     weekly_off: tuple[int, ...]  # 0 = Monday
+    uz: str = ""
+    about_uz: str = ""
 
 
 SALON = {
@@ -81,6 +88,23 @@ MASTERS = [
     Master(4, "Малика", "Malika", "Маникюр и педикюр", "Manicure and pedicure", ("nails",), (1,)),
 ]
 
+
+
+def _load_profile(path: str) -> None:
+    """Подменяет демо-каталог данными конкретного бизнеса (PROFILE=profiles/<name>.json)."""
+    global SALON, CATEGORIES, SERVICES, MASTERS
+    p = json.loads(Path(path).read_text(encoding="utf-8"))
+    s = p["salon"]
+    SALON = {**s, "opens": time.fromisoformat(s["opens"]), "closes": time.fromisoformat(s["closes"])}
+    CATEGORIES = [Category(**c) for c in p["categories"]]
+    SERVICES = [Service(**x) for x in p["services"]]
+    MASTERS = [Master(**{**m, "categories": tuple(m["categories"]), "weekly_off": tuple(m["weekly_off"])})
+               for m in p["masters"]]
+
+
+if os.getenv("PROFILE"):
+    _load_profile(os.environ["PROFILE"])
+
 SERVICE_BY_ID = {s.id: s for s in SERVICES}
 MASTER_BY_ID = {m.id: m for m in MASTERS}
 CATEGORY_BY_ID = {c.id: c for c in CATEGORIES}
@@ -90,5 +114,17 @@ def masters_for(service: Service) -> list[Master]:
     return [m for m in MASTERS if service.category in m.categories]
 
 
+def langs() -> list[str]:
+    return SALON.get("langs") or ["ru", "en"]
+
+
 def name(obj, lang: str) -> str:
-    return getattr(obj, lang if lang in ("ru", "en") else "ru")
+    return getattr(obj, lang, "") or obj.ru
+
+
+def about(m: Master, lang: str) -> str:
+    return getattr(m, f"about_{lang}", "") or m.about_ru
+
+
+def salon_text(key: str, lang: str) -> str:
+    return SALON.get(f"{key}_{lang}") or SALON.get(f"{key}_ru", "")

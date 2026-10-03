@@ -5,7 +5,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import CallbackQuery, Message
 
-from ..catalog import MASTER_BY_ID, SALON, SERVICE_BY_ID, masters_for, name
+from ..catalog import MASTER_BY_ID, SERVICE_BY_ID, masters_for, name, salon_text
 from ..common import day_options, notify_admins, reminder_flags, slots_for
 from ..config import Config
 from ..db import DB
@@ -132,7 +132,7 @@ async def confirm(call: CallbackQuery, state: FSMContext, db: DB, cfg: Config, b
     if resched:
         await call.message.edit_text(t(lang, "rescheduled", date=fields["date"], time=fields["time"]))
     else:
-        await call.message.edit_text(t(lang, "booked", address=SALON[f"address_{lang}"], **fields))
+        await call.message.edit_text(t(lang, "booked", address=salon_text("address", lang), **fields))
     await call.answer()
     await notify_admins(bot, cfg, db, "admin_moved" if resched else "admin_new", booking, call.from_user.id)
 

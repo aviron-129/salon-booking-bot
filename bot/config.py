@@ -12,6 +12,8 @@ class Config:
     demo: bool
     db_path: str
     tz: ZoneInfo
+    gsheet_id: str = ""
+    google_creds: str = ""
 
 
 def load_config() -> Config:
@@ -25,4 +27,6 @@ def load_config() -> Config:
         demo=os.getenv("DEMO_MODE", "1") == "1",
         db_path=os.getenv("DB_PATH", "salon.db"),
         tz=ZoneInfo(os.getenv("TIMEZONE", "Asia/Tashkent")),
+        gsheet_id=os.getenv("GSHEET_ID", ""),
+        google_creds=os.getenv("GOOGLE_CREDS", "google_creds.json"),
     )

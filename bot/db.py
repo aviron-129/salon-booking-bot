@@ -1,3 +1,4 @@
+from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta
 
@@ -70,6 +71,11 @@ class DB:
     def __init__(self, path: str, tz):
         self.path, self.tz = path, tz
         self.conn: aiosqlite.Connection | None = None
+        self.on_change: Callable[[int], None] | None = None
+
+    def _changed(self, booking_id: int):
+        if self.on_change:
+            self.on_change(booking_id)
 
     async def connect(self):
         self.conn = await aiosqlite.connect(self.path)
@@ -139,6 +145,7 @@ class DB:
             (user_id, service_id, master_id, start.isoformat(), end.isoformat(), self.now().isoformat()),
         )
         await self.conn.commit()
+        self._changed(cur.lastrowid)
         return cur.lastrowid
 
     async def move_booking(self, booking_id: int, master_id: int, start: datetime, end: datetime):
@@ -147,10 +154,12 @@ class DB:
             (master_id, start.isoformat(), end.isoformat(), booking_id),
         )
         await self.conn.commit()
+        self._changed(booking_id)
 
     async def set_status(self, booking_id: int, status: str):
         await self.conn.execute("UPDATE bookings SET status=? WHERE id=?", (status, booking_id))
         await self.conn.commit()
+        self._changed(booking_id)
 
     async def get_booking(self, booking_id: int) -> Booking | None:
         async with self.conn.execute(

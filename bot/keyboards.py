@@ -4,8 +4,9 @@ from aiogram.filters.callback_data import CallbackData
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 
+from . import catalog
 from .catalog import CATEGORIES, SERVICES, Master, Service, name
-from .texts import WEEKDAYS, fmt_price, t
+from .texts import LANG_LABELS, WEEKDAYS, fmt_price, t
 
 
 class LangCb(CallbackData, prefix="lang"):
@@ -58,10 +59,11 @@ def main_menu(lang: str, is_admin: bool) -> ReplyKeyboardMarkup:
     kb.row(KeyboardButton(text=t(lang, "menu_my")), KeyboardButton(text=t(lang, "menu_prices")))
     kb.row(KeyboardButton(text=t(lang, "menu_masters")), KeyboardButton(text=t(lang, "menu_contacts")))
     kb.row(KeyboardButton(text=t(lang, "menu_reviews")), KeyboardButton(text=t(lang, "menu_lang")))
-    last = [KeyboardButton(text=t(lang, "menu_order"))]
+    last = [] if catalog.SALON.get("hide_order") else [KeyboardButton(text=t(lang, "menu_order"))]
     if is_admin:
         last.insert(0, KeyboardButton(text=t(lang, "menu_admin")))
-    kb.row(*last)
+    if last:
+        kb.row(*last)
     return kb.as_markup(resize_keyboard=True)
 
 
@@ -74,8 +76,8 @@ def contact_kb(lang: str) -> ReplyKeyboardMarkup:
 
 def lang_kb():
     kb = InlineKeyboardBuilder()
-    kb.button(text="🇷🇺 Русский", callback_data=LangCb(code="ru"))
-    kb.button(text="🇬🇧 English", callback_data=LangCb(code="en"))
+    for code in catalog.langs():
+        kb.button(text=LANG_LABELS[code], callback_data=LangCb(code=code))
     return kb.as_markup()
 
 

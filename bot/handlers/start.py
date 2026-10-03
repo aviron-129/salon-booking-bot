@@ -3,12 +3,12 @@ from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery, Message
 
-from ..catalog import CATEGORIES, MASTERS, SALON, SERVICES, name
+from ..catalog import CATEGORIES, MASTERS, SALON, SERVICES, about, name, salon_text
 from ..common import is_admin
 from ..config import Config
 from ..db import DB
 from ..keyboards import LangCb, contact_kb, lang_kb, main_menu
-from ..texts import all_variants, fmt_price, t
+from ..texts import MINUTES, all_variants, fmt_price, t
 
 router = Router()
 
@@ -67,23 +67,24 @@ async def prices(message: Message, lang: str):
         for s in SERVICES:
             if s.category == c.id:
                 lines.append(f"• {name(s, lang)} — {fmt_price(s.price, lang)} · {s.minutes} min")
-    await message.answer("\n".join(lines).replace(" min", " мин" if lang == "ru" else " min"))
+    await message.answer("\n".join(lines).replace(" min", " " + MINUTES.get(lang, "min")))
 
 
 @router.message(F.text.in_(all_variants("menu_masters")))
 async def masters(message: Message, lang: str):
     lines = [t(lang, "masters_title")]
     for m in MASTERS:
-        lines.append(f"\n<b>{name(m, lang)}</b>\n{m.about_ru if lang == 'ru' else m.about_en}")
+        lines.append(f"\n<b>{name(m, lang)}</b>\n{about(m, lang)}")
     await message.answer("\n".join(lines))
 
 
 @router.message(F.text.in_(all_variants("menu_contacts")))
 async def contacts(message: Message, lang: str):
-    await message.answer(t(lang, "contacts", salon=SALON["name"], address=SALON[f"address_{lang}"],
+    await message.answer(t(lang, "contacts", salon=SALON["name"], address=salon_text("address", lang),
                            phone=SALON["phone"], opens=SALON["opens"].strftime("%H:%M"),
                            closes=SALON["closes"].strftime("%H:%M")))
-    await message.answer_location(SALON["lat"], SALON["lon"])
+    if SALON.get("lat"):
+        await message.answer_location(SALON["lat"], SALON["lon"])
 
 
 @router.message(F.text.in_(all_variants("menu_reviews")))

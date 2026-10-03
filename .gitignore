@@ -1,4 +1,7 @@
 .env
+.env.opatra
+/_botfather_opatra.py
+google_creds*.json
 *.db
 *.db-journal
 __pycache__/

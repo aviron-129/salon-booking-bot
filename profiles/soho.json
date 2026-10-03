@@ -1,0 +1,174 @@
+{
+  "_source": "2ГИС 03.10.2026: https://2gis.uz/tashkent/firm/70000001080728027 (адрес, часы, телефон, услуги, цены стрижек); мастера — из отзывов 2ГИС. Длительность условная.",
+  "salon": {
+    "name": "Soho Beauty Club",
+    "address_ru": "Ташкент, ул. Кары-Ниязи, 61",
+    "address_en": "61 Kary-Niyazi St, Tashkent",
+    "phone": "+998 33 305 40 40",
+    "lat": 41.324236,
+    "lon": 69.298203,
+    "opens": "09:00",
+    "closes": "20:00",
+    "currency_ru": "сум",
+    "currency_en": "UZS",
+    "price_from": true,
+    "hide_order": true
+  },
+  "categories": [
+    {
+      "id": "hair",
+      "ru": "Волосы",
+      "en": "Hair",
+      "emoji": "✂️"
+    },
+    {
+      "id": "nails",
+      "ru": "Маникюр и педикюр",
+      "en": "Nails",
+      "emoji": "💅"
+    },
+    {
+      "id": "lash",
+      "ru": "Ресницы и брови",
+      "en": "Lashes & brows",
+      "emoji": "👁"
+    },
+    {
+      "id": "massage",
+      "ru": "Массаж",
+      "en": "Massage",
+      "emoji": "💆"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "category": "hair",
+      "ru": "Женская стрижка",
+      "en": "Women's haircut",
+      "price": 150000,
+      "minutes": 60
+    },
+    {
+      "id": 2,
+      "category": "hair",
+      "ru": "Мужская стрижка",
+      "en": "Men's haircut",
+      "price": 100000,
+      "minutes": 45
+    },
+    {
+      "id": 3,
+      "category": "hair",
+      "ru": "Вечерняя причёска",
+      "en": "Evening updo",
+      "price": 0,
+      "minutes": 90
+    },
+    {
+      "id": 4,
+      "category": "nails",
+      "ru": "Японский маникюр",
+      "en": "Japanese manicure",
+      "price": 0,
+      "minutes": 60
+    },
+    {
+      "id": 5,
+      "category": "nails",
+      "ru": "Гель-лак",
+      "en": "Gel polish",
+      "price": 0,
+      "minutes": 90
+    },
+    {
+      "id": 6,
+      "category": "nails",
+      "ru": "Педикюр",
+      "en": "Pedicure",
+      "price": 0,
+      "minutes": 90
+    },
+    {
+      "id": 7,
+      "category": "lash",
+      "ru": "Наращивание ресниц",
+      "en": "Lash extensions",
+      "price": 0,
+      "minutes": 120
+    },
+    {
+      "id": 8,
+      "category": "lash",
+      "ru": "Коррекция бровей",
+      "en": "Brow shaping",
+      "price": 0,
+      "minutes": 30
+    },
+    {
+      "id": 9,
+      "category": "massage",
+      "ru": "Массаж лица",
+      "en": "Facial massage",
+      "price": 0,
+      "minutes": 45
+    }
+  ],
+  "masters": [
+    {
+      "id": 1,
+      "ru": "Надежда",
+      "en": "Nadezhda",
+      "about_ru": "Укладки и причёски",
+      "about_en": "Styling",
+      "categories": [
+        "hair"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 2,
+      "ru": "Севара",
+      "en": "Sevara",
+      "about_ru": "Укладки и причёски",
+      "about_en": "Styling",
+      "categories": [
+        "hair"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 3,
+      "ru": "Мухлие",
+      "en": "Mukhlie",
+      "about_ru": "Маникюр",
+      "about_en": "Manicure",
+      "categories": [
+        "nails"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 4,
+      "ru": "Фая",
+      "en": "Faya",
+      "about_ru": "Маникюр",
+      "about_en": "Manicure",
+      "categories": [
+        "nails"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 5,
+      "ru": "Дили",
+      "en": "Dili",
+      "about_ru": "Массаж",
+      "about_en": "Massage",
+      "categories": [
+        "massage"
+      ],
+      "weekly_off": []
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "_source": "2ГИС 03.10.2026: https://2gis.uz/tashkent/firm/70000001103600810 (адрес, часы, телефон, услуги, цена стрижки); мастера — из отзывов 2ГИС. Длительность условная.",
+  "salon": {
+    "name": "U Beauty Space",
+    "address_ru": "Ташкент, 8-й проезд Мироншаха, A42",
+    "address_en": "A42, 8th Mironshokh passage, Tashkent",
+    "phone": "+998 33 023 55 55",
+    "lat": 41.286469,
+    "lon": 69.272146,
+    "opens": "09:00",
+    "closes": "20:00",
+    "currency_ru": "сум",
+    "currency_en": "UZS",
+    "price_from": true,
+    "hide_order": true
+  },
+  "categories": [
+    {
+      "id": "nails",
+      "ru": "Маникюр и педикюр",
+      "en": "Nails",
+      "emoji": "💅"
+    },
+    {
+      "id": "brows",
+      "ru": "Брови и ресницы",
+      "en": "Brows & lashes",
+      "emoji": "👁"
+    },
+    {
+      "id": "hair",
+      "ru": "Волосы",
+      "en": "Hair",
+      "emoji": "✂️"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "category": "nails",
+      "ru": "Японский маникюр",
+      "en": "Japanese manicure",
+      "price": 0,
+      "minutes": 60
+    },
+    {
+      "id": 2,
+      "category": "nails",
+      "ru": "Гель-лак",
+      "en": "Gel polish",
+      "price": 0,
+      "minutes": 90
+    },
+    {
+      "id": 3,
+      "category": "nails",
+      "ru": "Педикюр",
+      "en": "Pedicure",
+      "price": 0,
+      "minutes": 90
+    },
+    {
+      "id": 4,
+      "category": "brows",
+      "ru": "Коррекция и окрашивание бровей",
+      "en": "Brow shaping & tint",
+      "price": 0,
+      "minutes": 45
+    },
+    {
+      "id": 5,
+      "category": "brows",
+      "ru": "Ламинирование ресниц",
+      "en": "Lash lift",
+      "price": 0,
+      "minutes": 60
+    },
+    {
+      "id": 6,
+      "category": "hair",
+      "ru": "Женская стрижка",
+      "en": "Women's haircut",
+      "price": 300000,
+      "minutes": 60
+    }
+  ],
+  "masters": [
+    {
+      "id": 1,
+      "ru": "Нигора",
+      "en": "Nigora",
+      "about_ru": "Маникюр",
+      "about_en": "Manicure",
+      "categories": [
+        "nails"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 2,
+      "ru": "Элиана",
+      "en": "Eliana",
+      "about_ru": "Визажист-бровист",
+      "about_en": "Brow artist",
+      "categories": [
+        "brows"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 3,
+      "ru": "Мастер по волосам",
+      "en": "Hair stylist",
+      "about_ru": "Стрижки и окрашивание",
+      "about_en": "Haircuts and coloring",
+      "categories": [
+        "hair"
+      ],
+      "weekly_off": []
+    }
+  ]
+}

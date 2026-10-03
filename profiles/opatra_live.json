@@ -1,0 +1,46 @@
+{
+  "_source": "Приветствие, адрес, телефон, Instagram — от Opatra London (чат 03.10.2026, RU + UZ латиница). Часы, процедуры и косметологи — 2ГИС/отзывы, пример до их чек-листа. Длительность условная, цены не указаны.",
+  "salon": {
+    "name": "Opatra London",
+    "langs": ["ru", "uz"],
+    "address_ru": "Яшнободский район, ул. Боткина, дом 8 (рядом «Цветочный базар»)",
+    "address_uz": "Yashnobod tumani, Botkina ko'chasi, 8-uy («Gullar bozori» yonida)",
+    "address_en": "8 Botkin St, Yashnobod district, Tashkent",
+    "phone": "+998 77 264 06 52",
+    "lat": 41.3082533,
+    "lon": 69.310111,
+    "opens": "09:00",
+    "closes": "20:00",
+    "currency_ru": "сум",
+    "currency_en": "UZS",
+    "hide_order": true,
+    "emoji": "✨",
+    "texts": {
+      "ru": {
+        "choose_lang": "Пожалуйста, выберите язык / Iltimos, tilni tanlang:",
+        "welcome": "✨ Добро пожаловать в <b>Opatra London</b>!\nЗдесь можно записаться на процедуру за 1 минуту — без звонков и ожидания ответа.\nВыберите услугу, мастера и удобное время.\nЯ напомню о визите заранее, а перенос или отмена доступны в разделе «Мои записи».\n\n📍 Адрес: Яшнободский район, ул. Боткина, дом 8 (рядом «Цветочный базар»)\n📞 Телефон: +998 77 264 06 52\n📲 Instagram: @opatra_london__tashkent",
+        "demo_banner": "ℹ️ Это демо-версия бота для Opatra London. Процедуры и специалисты пока примерные — заменим на ваши из чек-листа. Записи тестовые. Админ-панель открыта, чтобы вы видели, как всё выглядит для администратора.",
+        "contacts": "📍 <b>{salon}</b>\n{address}\n📞 {phone}\n📲 Instagram: @opatra_london__tashkent\n🕙 Ежедневно {opens}–{closes}\n\nНиже — точка на карте 👇"
+      },
+      "uz": {
+        "welcome": "✨ <b>Opatra London</b> ga xush kelibsiz!\nBu yerda 1 daqiqada — qo'ng'iroqlarsiz va kutmasdan — muolajaga yozilishingiz mumkin.\nXizmatni, mutaxassisni va qulay vaqtni tanlang.\nMen tashrif haqida oldindan eslataman, yozuvni ko'chirish yoki bekor qilish «Mening yozuvlarim» bo'limida mavjud.\n\n📍 Manzil: Yashnobod tumani, Botkina ko'chasi, 8-uy («Gullar bozori» yonida)\n📞 Telefon: +998 77 264 06 52\n📲 Instagram: @opatra_london__tashkent",
+        "demo_banner": "ℹ️ Bu Opatra London uchun botning demo-versiyasi. Muolajalar va mutaxassislar hozircha namuna — chek-listdagi ma'lumotlaringizga almashtiramiz. Yozuvlar sinov uchun. Admin-panel ochiq — administrator uchun hammasi qanday ko'rinishini ko'rishingiz mumkin.",
+        "contacts": "📍 <b>{salon}</b>\n{address}\n📞 {phone}\n📲 Instagram: @opatra_london__tashkent\n🕙 Har kuni {opens}–{closes}\n\nXaritadagi joylashuv quyida 👇"
+      }
+    }
+  },
+  "categories": [
+    {"id": "cosm", "ru": "Косметология", "en": "Cosmetology", "uz": "Kosmetologiya", "emoji": "✨"}
+  ],
+  "services": [
+    {"id": 1, "category": "cosm", "ru": "Чистка лица", "en": "Facial cleansing", "uz": "Yuzni tozalash", "price": 0, "minutes": 60},
+    {"id": 2, "category": "cosm", "ru": "Пилинг", "en": "Peeling", "uz": "Piling", "price": 0, "minutes": 45},
+    {"id": 3, "category": "cosm", "ru": "Массаж лица", "en": "Facial massage", "uz": "Yuz massaji", "price": 0, "minutes": 45},
+    {"id": 4, "category": "cosm", "ru": "Аппаратная косметология", "en": "Device cosmetology", "uz": "Apparat kosmetologiyasi", "price": 0, "minutes": 60}
+  ],
+  "masters": [
+    {"id": 1, "ru": "Тахмина", "en": "Takhmina", "uz": "Taxmina", "about_ru": "Косметолог", "about_en": "Cosmetologist", "about_uz": "Kosmetolog", "categories": ["cosm"], "weekly_off": []},
+    {"id": 2, "ru": "Ильяна", "en": "Ilyana", "uz": "Ilyana", "about_ru": "Косметолог", "about_en": "Cosmetologist", "about_uz": "Kosmetolog", "categories": ["cosm"], "weekly_off": []},
+    {"id": 3, "ru": "Назокат", "en": "Nazokat", "uz": "Nazokat", "about_ru": "Косметолог", "about_en": "Cosmetologist", "about_uz": "Kosmetolog", "categories": ["cosm"], "weekly_off": []}
+  ]
+}

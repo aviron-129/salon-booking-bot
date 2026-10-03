@@ -11,6 +11,7 @@ from .db import DB
 from .handlers import admin, booking, lead, my, start
 from .middlewares import UserMiddleware
 from .reminders import reminder_loop
+from .sheets import SheetSync
 
 
 async def main():
@@ -18,6 +19,8 @@ async def main():
     cfg = load_config()
     db = DB(cfg.db_path, cfg.tz)
     await db.connect()
+    if cfg.gsheet_id:
+        db.on_change = SheetSync(db, cfg.gsheet_id, cfg.google_creds).schedule
 
     bot = Bot(cfg.token, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
     dp = Dispatcher(db=db, cfg=cfg)

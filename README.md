@@ -1,4 +1,4 @@
-﻿# Lavanda Beauty — Telegram booking bot for a beauty salon
+# Lavanda Beauty — Telegram booking bot for a beauty salon
 
 A production-style Telegram bot that lets clients of a hair & beauty salon book appointments in under a minute,
 and gives the owner a simple admin panel right inside Telegram.

@@ -1,0 +1,145 @@
+{
+  "_source": "2ГИС 03.10.2026: https://2gis.uz/tashkent/firm/70000001097177485 (адрес, телефон, услуги, цена стрижки; часы 10:00–01:00 — в демо закрытие 23:59); мастера — из отзывов 2ГИС. Длительность условная.",
+  "salon": {
+    "name": "Сталь. Мужской салон",
+    "address_ru": "Ташкент, ул. Фурката, 2а",
+    "address_en": "2a Furkat St, Tashkent",
+    "phone": "+998 97 696 80 88",
+    "lat": 41.316257,
+    "lon": 69.244104,
+    "opens": "10:00",
+    "closes": "23:59",
+    "currency_ru": "сум",
+    "currency_en": "UZS",
+    "price_from": true,
+    "emoji": "💈",
+    "hide_order": true
+  },
+  "categories": [
+    {
+      "id": "barber",
+      "ru": "Барбер",
+      "en": "Barber",
+      "emoji": "💈"
+    },
+    {
+      "id": "nails",
+      "ru": "Маникюр и педикюр",
+      "en": "Nails",
+      "emoji": "💅"
+    },
+    {
+      "id": "cosm",
+      "ru": "Косметология",
+      "en": "Cosmetology",
+      "emoji": "✨"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "category": "barber",
+      "ru": "Мужская стрижка",
+      "en": "Men's haircut",
+      "price": 250000,
+      "minutes": 60
+    },
+    {
+      "id": 2,
+      "category": "barber",
+      "ru": "Детская стрижка",
+      "en": "Kids' haircut",
+      "price": 0,
+      "minutes": 30
+    },
+    {
+      "id": 3,
+      "category": "nails",
+      "ru": "Мужской маникюр",
+      "en": "Men's manicure",
+      "price": 0,
+      "minutes": 60
+    },
+    {
+      "id": 4,
+      "category": "nails",
+      "ru": "Мужской педикюр",
+      "en": "Men's pedicure",
+      "price": 0,
+      "minutes": 60
+    },
+    {
+      "id": 5,
+      "category": "cosm",
+      "ru": "Чистка лица",
+      "en": "Facial cleansing",
+      "price": 0,
+      "minutes": 60
+    },
+    {
+      "id": 6,
+      "category": "cosm",
+      "ru": "Массаж лица",
+      "en": "Facial massage",
+      "price": 0,
+      "minutes": 30
+    }
+  ],
+  "masters": [
+    {
+      "id": 1,
+      "ru": "Хуш",
+      "en": "Khush",
+      "about_ru": "Барбер",
+      "about_en": "Barber",
+      "categories": [
+        "barber"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 2,
+      "ru": "Абдулазиз",
+      "en": "Abdulaziz",
+      "about_ru": "Барбер",
+      "about_en": "Barber",
+      "categories": [
+        "barber"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 3,
+      "ru": "Лазиз",
+      "en": "Laziz",
+      "about_ru": "Барбер",
+      "about_en": "Barber",
+      "categories": [
+        "barber"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 4,
+      "ru": "Лайма",
+      "en": "Layma",
+      "about_ru": "Маникюр",
+      "about_en": "Manicure",
+      "categories": [
+        "nails"
+      ],
+      "weekly_off": []
+    },
+    {
+      "id": 5,
+      "ru": "Екатерина",
+      "en": "Ekaterina",
+      "about_ru": "Косметолог",
+      "about_en": "Cosmetologist",
+      "categories": [
+        "cosm"
+      ],
+      "weekly_off": []
+    }
+  ]
+}
